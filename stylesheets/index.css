@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("./components/main.css");
+
+/* color palette */
+
+:root {
+  --primary-lightest: hsl(291, 100%, 79%);
+  --primary-light: hsl(291, 61%, 66%);
+  --primary-color: hsl(291, 100%, 50%);
+  --primary-dark: hsl(291, 97%, 31%);
+  --primary-darkest: hsl(291, 96%, 22%);
+  --secondary-light: hsl(334, 100%, 70%);
+  --secondary-lighter: hsl(334, 100%, 84%);
+  --secondary-color: hsl(334, 100%, 50%);
+  --secondary-dark: hsl(334, 100%, 37%);
+  --secondary-darker: hsl(334, 97%, 26%);
+  --contrast-color: #ffb801;
+  --contrast-light: #fcd574;
+  --contrast-dark: #976c00;
+  --success-bg: hsl(134, 41%, 88%);
+  --success-txt: hsl(134, 61%, 21%);
+  --danger-bg: hsl(355, 70%, 91%);
+  --danger-txt: hsl(354, 61%, 28%);
+  --warning-bg: hsl(46, 100%, 90%);
+  --warning-txt: hsl(45, 94%, 27%);
+  --info-bg: hsl(189, 53%, 88%);
+  --info-txt: hsl(189, 78%, 21%);
+  --grey-bg: hsl(200, 4%, 85%);
+  --white-color: hsl(0, 0%, 100%);
+  --black-color: hsl(0, 0%, 0%);
+  --shadow-color: hsl(0, 1%, 65%);
+  --helper-color: hsl(0, 0%, 20%); /* for input box helper text & snackbar bg*/
+  --error-txt: hsl(0, 100%, 50%);
+  --modal-bg: hsla(0, 0%, 0%, 0.125);
+}
+
+/* css reset */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: "Fira Sans", sans-serif;
+  line-height: 1.5;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+input,
+button,
+textarea,
+select {
+  font-family: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0.5rem 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a,
+button {
+  cursor: pointer;
+}
+
+img,
+svg,
+video,
+picture,
+canvas,
+iframe {
+  display: block;
+  max-width: 100%;
+  max-inline-size: 100%;
+}
