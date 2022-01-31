@@ -50,6 +50,7 @@
 
 .btn-success:hover {
   background-color: var(--success-bg);
+  color: var(--black-color);
 }
 
 .btn-error {
@@ -58,6 +59,7 @@
 
 .btn-error:hover {
   background-color: var(--danger-bg);
+  color: var(--black-color);
 }
 
 .btn-light {
@@ -94,7 +96,7 @@
 
 .btn-outline-primary:hover {
   background-color: var(--primary-darker);
-  color: var(--black-color);
+  color: var(--white-color);
 }
 
 .btn-outline-secondary,
@@ -109,7 +111,7 @@
 .btn-outline-link:hover,
 .btn-outline-icon:hover {
   background-color: var(--secondary-darker);
-  color: var(--font-600);
+  color: var(--white-color);
 }
 
 .btn-outline-success {
@@ -123,8 +125,9 @@
 }
 
 .btn-outline-danger {
-  border: 1px solid var(--danger-txt);
+  border: 2px solid var(--danger-txt);
   background-color: transparent;
+  color: var(--error-txt);
 }
 
 .btn-outline-danger:hover {
