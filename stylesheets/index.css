@@ -4,11 +4,11 @@
 /* color palette */
 
 :root {
-  --primary-lightest: hsl(291, 100%, 79%);
+  --primary-lighter: hsl(291, 100%, 79%);
   --primary-light: hsl(291, 61%, 66%);
   --primary-color: hsl(291, 100%, 50%);
   --primary-dark: hsl(291, 97%, 31%);
-  --primary-darkest: hsl(291, 96%, 22%);
+  --primary-darker: hsl(291, 96%, 22%);
   --secondary-light: hsl(334, 100%, 70%);
   --secondary-lighter: hsl(334, 100%, 84%);
   --secondary-color: hsl(334, 100%, 50%);
