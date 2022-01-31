@@ -121,7 +121,8 @@
 }
 
 .btn-outline-success:hover {
-  background-color: var(--success-bg);
+  background-color: var(--success-txt);
+  color: var(--white-color);
 }
 
 .btn-outline-danger {
@@ -131,5 +132,6 @@
 }
 
 .btn-outline-danger:hover {
-  background-color: var(--danger-bg);
+  background-color: var(--error-txt);
+  color: var(--white-color);
 }
