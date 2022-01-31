@@ -1,0 +1,42 @@
+.alert {
+  position: relative;
+  padding: 0.75rem;
+  margin: 0.5rem;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+}
+
+.alert-primary {
+  color: var(--black-color);
+  background-color: var(--primary-color);
+}
+
+.alert-secondary {
+  color: var(--black-color);
+  background-color: var(--secondary-light);
+}
+
+.alert-success {
+  color: var(--success-txt);
+  background-color: var(--success-bg);
+}
+
+.alert-danger {
+  color: var(--danger-txt);
+  background-color: var(--danger-bg);
+}
+
+.alert-warning {
+  color: var(--warning-txt);
+  background-color: var(--warning-bg);
+}
+
+.alert-info {
+  color: var(--info-txt);
+  background-color: var(--info-bg);
+}
+
+.alert-dark {
+  color: var(--info-txt);
+  background-color: var(--grey-bg);
+}
