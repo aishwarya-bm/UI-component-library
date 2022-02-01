@@ -5,27 +5,27 @@
   margin: 0 0.5rem;
 }
 
-.xs {
+.avatar-xs {
   min-width: 2.25rem;
   min-height: 2.25rem;
 }
 
-.sm {
+.avatar-sm {
   min-width: 2.75rem;
   min-height: 2.75rem;
 }
 
-.md {
+.avatar-md {
   min-width: 3.5rem;
   min-height: 3.5rem;
 }
 
-.lg {
+.avatar-lg {
   min-width: 4.25rem;
   min-height: 4.25rem;
 }
 
-.xl {
+.avatar-xl {
   min-width: 5rem;
   min-height: 5rem;
 }
