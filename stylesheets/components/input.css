@@ -31,4 +31,5 @@ input[type="text"] {
 
 .error-message {
   color: var(--error-txt);
+  font-size: 0.75rem;
 }
