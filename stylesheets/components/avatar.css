@@ -1,0 +1,35 @@
+.avatar {
+  border-radius: 50%;
+  width: 3.5rem;
+  height: 3.5rem;
+  margin: 0 0.5rem;
+}
+
+.xs {
+  width: 2.25rem;
+  height: 2.25rem;
+}
+
+.sm {
+  width: 2.75rem;
+  height: 2.75rem;
+}
+
+.md {
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+.lg {
+  width: 4.25rem;
+  height: 4.25rem;
+}
+
+.xl {
+  width: 5rem;
+  height: 5rem;
+}
+
+.avatar-square {
+  border-radius: 0.25rem;
+}
