@@ -1,5 +1,4 @@
 .card {
-  display: flex;
   flex-direction: column;
   width: 20rem;
   margin: 1rem;
@@ -10,7 +9,6 @@
 
 /* this element contains the header(title,author) and dismiss icon */
 .card-top {
-  display: flex;
   flex-direction: column;
   position: relative;
 }
@@ -25,7 +23,6 @@
 /*  this element contains the header title & author */
 .card-header {
   padding: 0 1rem;
-  display: flex;
   flex-direction: column;
 }
 
@@ -48,14 +45,8 @@
 /* card-action element contains the action for icons & buttons, card-head contains header(title & author) & dismiss */
 .card-action,
 .card-head {
-  display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.card-action-btns,
-.card-action-icons {
-  display: flex;
 }
 
 /* header on top card */
@@ -81,21 +72,4 @@
 .card-overlay .card-header {
   position: absolute;
   bottom: 0;
-}
-
-/* card with a badge */
-.card-badge {
-  position: absolute;
-  top: 20px;
-  left: -2px;
-  background-color: var(--primary-color);
-  color: white;
-  font-weight: 600;
-  font-size: 0.75rem;
-  padding: 0.2rem 0.5rem;
-}
-
-/* style overridden for link btn */
-.btn-link {
-  margin: 0;
 }

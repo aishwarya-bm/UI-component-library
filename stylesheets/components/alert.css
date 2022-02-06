@@ -40,12 +40,3 @@
   color: var(--info-txt);
   background-color: var(--grey-bg);
 }
-
-/* toggle display */
-.alert-show {
-  display: block;
-}
-
-.alert-hide {
-  display: none;
-}
