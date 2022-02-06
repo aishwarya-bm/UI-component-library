@@ -1,0 +1,23 @@
+.list {
+  margin: 0;
+}
+
+.list-item {
+  font-size: 1.2rem;
+  padding: 0.5rem 0;
+}
+
+.list-numbered {
+  list-style: decimal;
+}
+.list-no-bullet {
+  list-style: none;
+}
+
+.list-stack {
+  padding-left: 0;
+}
+
+.list-item-stack {
+  border: 1px solid var(--primary-color);
+}
