@@ -1,4 +1,4 @@
-/* Display utils*/
+/* Display */
 
 .d-block {
   display: block;
@@ -44,4 +44,73 @@
 
 .p-sticky {
   position: sticky;
+}
+
+/* Text */
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.gray-text {
+  color: var(--shadow-color);
+}
+
+.text-sm {
+  font-size: 0.8rem;
+}
+
+.text-md {
+  font-size: 1rem;
+}
+
+.text-lg {
+  font-size: 1.5rem;
+}
+
+.text-xl {
+  font-size: 2rem;
+}
+
+.text-xxl {
+  font-size: 2.5rem;
+}
+
+/* Heading */
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+h5 {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+h6 {
+  font-size: 1rem;
+  font-weight: 500;
 }
