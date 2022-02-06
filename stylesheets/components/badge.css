@@ -29,10 +29,14 @@
   left: -0.75rem;
 }
 
-.position-absolute {
+/* card with a badge */
+.card-badge {
   position: absolute;
-}
-
-.position-relative {
-  position: relative;
+  top: 20px;
+  left: -2px;
+  background-color: var(--primary-color);
+  color: white;
+  font-weight: 600;
+  font-size: 0.75rem;
+  padding: 0.2rem 0.5rem;
 }

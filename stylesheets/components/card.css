@@ -1,0 +1,75 @@
+.card {
+  flex-direction: column;
+  width: 20rem;
+  margin: 1rem;
+  border-radius: 0.3rem;
+  box-shadow: 5px 5px 10px var(--shadow-color);
+  box-sizing: border-box;
+}
+
+/* this element contains the header(title,author) and dismiss icon */
+.card-top {
+  flex-direction: column;
+  position: relative;
+}
+
+/* this element contains the media */
+.card-media {
+  width: 100%;
+  margin-bottom: 0.25rem;
+  position: relative;
+}
+
+/*  this element contains the header title & author */
+.card-header {
+  padding: 0 1rem;
+  flex-direction: column;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  padding: 0.5rem 0;
+}
+
+.card-author {
+  font-size: 0.875rem;
+  padding-bottom: 0.8rem;
+}
+
+/* this element contains the descriptive text */
+.card-content {
+  flex-grow: 1;
+  padding: 0 1rem 0.8rem 1rem;
+}
+
+/* card-action element contains the action for icons & buttons, card-head contains header(title & author) & dismiss */
+.card-action,
+.card-head {
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* header on top card */
+.header-top .card-top {
+  flex-direction: column-reverse;
+}
+
+/* icons only card */
+.icons-only .card-action {
+  align-self: flex-end;
+}
+
+/* horizontal card */
+.card-hor .card-top {
+  flex-direction: row;
+}
+
+.card-hor .card-media {
+  width: 50%;
+}
+
+/* text overlay card */
+.card-overlay .card-header {
+  position: absolute;
+  bottom: 0;
+}
