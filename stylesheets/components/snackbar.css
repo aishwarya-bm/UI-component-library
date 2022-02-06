@@ -1,0 +1,22 @@
+.snackbar {
+  text-align: center;
+  background-color: var(--helper-color);
+  color: var(--white-color);
+  position: fixed;
+  bottom: 10px;
+  justify-content: space-between;
+  border-radius: 5px;
+}
+
+.snackbar-baseline {
+  align-items: center;
+  justify-content: center;
+}
+
+.snackbar-label {
+  margin: 0 1rem;
+}
+
+.snackbar-actions {
+  align-items: center;
+}
