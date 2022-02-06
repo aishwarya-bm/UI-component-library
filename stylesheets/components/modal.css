@@ -1,0 +1,43 @@
+.modal-container {
+  position: fixed;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--modal-bg);
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.modal {
+  background-color: var(--white-color);
+  width: 30%;
+  padding: 1rem;
+  max-width: 100%;
+  flex-direction: column;
+}
+
+.modal-body {
+  margin: 1rem 0;
+}
+
+.modal-action {
+  justify-content: flex-end;
+  margin-top: 0.5rem;
+}
+
+.modal h2 {
+  margin-bottom: 0.5rem;
+}
+
+.modal-radio {
+  margin: 0.5rem 0;
+}
+
+@media screen and (max-width: 500px) {
+  .modal-action {
+    flex-direction: column;
+  }
+}
