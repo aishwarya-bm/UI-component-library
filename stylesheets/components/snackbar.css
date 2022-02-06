@@ -20,3 +20,9 @@
 .snackbar-actions {
   align-items: center;
 }
+
+/* override btn style for link for action buttons */
+.btn-link,
+.btn-icon {
+  color: var(--primary-light);
+}
