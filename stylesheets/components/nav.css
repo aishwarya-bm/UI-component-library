@@ -1,13 +1,11 @@
 .nav-container {
   background-color: var(--primary-color);
   color: white;
-  display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
 .nav-brand {
-  display: flex;
   align-items: center;
   margin-left: 1rem;
 }
@@ -18,13 +16,8 @@
 }
 
 .nav-pills {
-  display: flex;
   margin-right: 1rem;
   align-items: center;
-}
-
-.nav-pills-list {
-  display: flex;
 }
 
 .nav-btn {
