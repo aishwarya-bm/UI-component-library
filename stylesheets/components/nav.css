@@ -1,0 +1,42 @@
+.nav-container {
+  background-color: var(--primary-color);
+  color: white;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-brand {
+  align-items: center;
+  margin-left: 1rem;
+}
+
+.nav-brand-name {
+  padding: 0 1rem;
+  margin: 0.5rem 0;
+}
+
+.nav-pills {
+  margin-right: 1rem;
+  align-items: center;
+}
+
+.nav-btn {
+  color: white;
+  padding: 0.5rem;
+}
+
+.nav-fixed {
+  position: absolute;
+  width: 100%;
+  top: 0;
+}
+
+.nav-short {
+  width: fit-content;
+}
+
+@media screen and (max-width: 500px) {
+  .nav-container {
+    flex-direction: column;
+  }
+}
