@@ -1,0 +1,11 @@
+.star {
+  cursor: pointer;
+}
+
+.selected {
+  color: var(--gold-color);
+}
+
+.star:hover {
+  color: var(--star-hover);
+}
