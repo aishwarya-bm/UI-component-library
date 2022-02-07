@@ -1,0 +1,72 @@
+@import url(./docs/docs.css);
+
+body {
+  font-family: "Fira Sans", sans-serif;
+  margin: 0;
+}
+
+.landing-container {
+  text-align: center;
+}
+
+.nav {
+  background-color: var(--primary-lighter);
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left-nav {
+  font-size: 1.5rem;
+  font-weight: 900;
+  padding-left: 5rem;
+}
+.right-nav {
+  padding-right: 2rem;
+  gap: 2rem;
+  font-weight: 700;
+}
+
+main {
+  margin: 0 5rem;
+  padding-bottom: 5rem;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  justify-content: center;
+  margin: 1rem;
+}
+
+img {
+  width: 16rem;
+  height: auto;
+}
+
+.subhead {
+  padding: 1rem;
+  width: 60%;
+}
+
+@media screen and (max-width: 600px) {
+  .nav {
+    flex-direction: column;
+  }
+  .left-nav {
+    padding-left: 0;
+  }
+  .right-nav {
+    padding-right: 0;
+  }
+  .subhead {
+    width: 100%;
+  }
+  main {
+    margin: 0;
+  }
+  img {
+    width: 10em;
+    height: 10em;
+  }
+}
