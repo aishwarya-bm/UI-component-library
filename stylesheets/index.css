@@ -32,6 +32,8 @@
   --helper-color: hsl(0, 0%, 20%); /* for input box helper text & snackbar bg*/
   --error-txt: hsl(0, 100%, 50%);
   --modal-bg: hsla(0, 0%, 0%, 0.125);
+  --gold-color: hsl(44deg 94% 43%);
+  --star-hover: hsl(44, 100%, 51%);
 }
 
 /* css reset */
