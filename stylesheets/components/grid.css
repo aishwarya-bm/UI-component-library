@@ -1,0 +1,34 @@
+.col-eq-2 {
+  grid-template-columns: 1fr 1fr;
+}
+
+.col-eq-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.col-1-2 {
+  grid-template-columns: 1fr 2fr;
+}
+
+.col-eq-auto {
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+}
+
+.grid-gap {
+  gap: 1rem;
+}
+
+.grid-item {
+  padding: 1rem;
+}
+
+@media screen and (max-width: 500px) {
+  .col-eq-2,
+  .col-eq-3 {
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  }
+
+  .col-1-2 {
+    grid-template-columns: 1fr;
+  }
+}
