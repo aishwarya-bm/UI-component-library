@@ -1,0 +1,62 @@
+@import url(../stylesheets/index.css);
+.nav {
+  background-color: var(--primary-lighter);
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left-nav {
+  font-size: 1.5rem;
+  font-weight: 900;
+  padding-left: 5rem;
+}
+.right-nav {
+  padding-right: 2rem;
+  gap: 2rem;
+  font-weight: 700;
+}
+
+.doc-main {
+  margin: 0 5rem;
+  padding-bottom: 5rem;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  justify-content: center;
+  margin: 1rem;
+}
+
+.doc-img {
+  width: 16rem;
+  height: auto;
+}
+
+.subhead {
+  padding: 1rem;
+  width: 60%;
+}
+
+@media screen and (max-width: 600px) {
+  .nav {
+    flex-direction: column;
+  }
+  .left-nav {
+    padding-left: 0;
+  }
+  .right-nav {
+    padding-right: 0;
+  }
+  .subhead {
+    width: 100%;
+  }
+  .doc-main {
+    margin: 0;
+  }
+  .doc-img {
+    width: 10em;
+    height: 10em;
+  }
+}

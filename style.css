@@ -1,0 +1,10 @@
+@import url(./docs/docs.css);
+
+body {
+  font-family: "Fira Sans", sans-serif;
+  margin: 0;
+}
+
+.landing-container {
+  text-align: center;
+}
