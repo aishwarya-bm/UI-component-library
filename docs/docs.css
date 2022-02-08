@@ -17,7 +17,7 @@
   font-weight: 700;
 }
 
-main {
+.doc-main {
   margin: 0 5rem;
   padding-bottom: 5rem;
   flex-direction: column;
@@ -52,7 +52,7 @@ main {
   .subhead {
     width: 100%;
   }
-  main {
+  .doc-main {
     margin: 0;
   }
   .doc-img {
