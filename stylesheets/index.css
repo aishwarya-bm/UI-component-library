@@ -35,6 +35,7 @@
   --modal-bg: hsla(0, 0%, 0%, 0.125);
   --gold-color: hsl(44deg 94% 43%);
   --star-hover: hsl(44, 100%, 51%);
+  --doc-bg: hsl(200deg 4% 85% / 26%);
 }
 
 /* css reset */

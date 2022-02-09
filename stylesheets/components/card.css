@@ -5,6 +5,7 @@
   border-radius: 0.3rem;
   box-shadow: 5px 5px 10px var(--shadow-color);
   box-sizing: border-box;
+  background-color: var(--white-color);
 }
 
 /* this element contains the header(title,author) and dismiss icon */

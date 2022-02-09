@@ -1,5 +1,12 @@
 @import url(../stylesheets/index.css);
 
+body {
+  font-family: "Fira Sans", sans-serif;
+  margin: 0;
+  text-align: justify;
+}
+
+/* landing page */
 .nav {
   background-color: var(--primary-lighter);
   width: 100%;
@@ -18,11 +25,32 @@
   font-weight: 700;
 }
 
+.doc-body {
+  margin: 1rem 5rem 0 5rem;
+}
+
+.doc-img {
+  width: 16rem;
+  height: auto;
+}
+
+.head h2 {
+  margin: 0;
+}
+
+.subhead {
+  padding: 1rem;
+  width: 60%;
+}
+
+/* intro page & other common styles*/
+
 .doc-main {
-  margin: 0 5rem;
   padding-bottom: 5rem;
   flex-direction: column;
   align-items: center;
+  height: 85vh;
+  overflow-y: scroll;
 }
 
 .logo {
@@ -40,26 +68,14 @@
 .doc-content {
   padding: 1rem;
   margin: 0 2rem;
+  height: 80vh;
+  overflow-y: scroll;
+  flex: 0 0 calc(100% - 13rem);
 }
 
-.doc-img {
-  width: 16rem;
-  height: auto;
-}
-
-.subhead {
-  padding: 1rem;
-  width: 60%;
-}
-
-.doc-body {
-  margin: 1rem 5rem 0 5rem;
-}
-
-/* add this color to variables */
 .c-example {
   padding: 2rem;
-  background-color: hsl(200deg 4% 85% / 26%);
+  background-color: var(--doc-bg);
 }
 
 .c-code {
@@ -80,6 +96,10 @@
   color: var(--primary-dark);
 }
 
+.doc-btn {
+  font-size: 1.25rem;
+}
+
 .center {
   gap: 0.5rem;
   justify-content: center;
@@ -91,25 +111,43 @@
   font-weight: 600;
 }
 
-.doc-sidebar::-webkit-scrollbar {
+.doc-sidebar::-webkit-scrollbar,
+.doc-content::-webkit-scrollbar,
+.doc-main::-webkit-scrollbar {
   width: 0.3rem;
 }
 
-.doc-sidebar::-webkit-scrollbar-track {
+.doc-sidebar::-webkit-scrollbar-track,
+.doc-content::-webkit-scrollbar-track,
+.doc-main::-webkit-scrollbar-track {
   background: var(--grey-bg);
 }
 
-.doc-sidebar::-webkit-scrollbar-thumb {
+.doc-sidebar::-webkit-scrollbar-thumb,
+.doc-content::-webkit-scrollbar-thumb,
+.doc-main::-webkit-scrollbar-thumb {
   background: var(--primary-darker);
 }
 
-/* overriding only for example, code in highlight js will have fixed position*/
+/* custom style for doc, code in highlight js will have fixed position*/
 .toast-example {
   position: absolute;
 }
 
+/* custom style for doc nav */
+.list-item {
+  cursor: pointer;
+}
+
+.grid-item {
+  border: 1px solid;
+}
+
+/* overridden only for this special case, since background is dark */
+.card-overlay .card-header {
+  color: white;
+}
 pre {
-  font: 400 0.8125em/1.4375, "Menlo", "Consolas", "DejaVu Sans Mono" monospace;
   white-space: -moz-pre-wrap; /* Mozilla, supported since 1999 */
   white-space: -pre-wrap; /* Opera */
   white-space: -o-pre-wrap; /* Opera */
@@ -117,7 +155,7 @@ pre {
   word-wrap: break-word; /* IE 5.5+ */
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 700px) {
   .nav {
     flex-direction: column;
   }
@@ -144,6 +182,7 @@ pre {
   .doc-content {
     padding: 1rem;
     margin: 1rem;
+    overflow-y: unset;
   }
   .center {
     flex-direction: column;
@@ -152,62 +191,4 @@ pre {
     display: block;
     text-align: center;
   }
-}
-
-.grid-item {
-  border: 1px solid;
-}
-
-/* css changes */
-
-/* modify in button */
-.btn {
-  font-size: 0.8rem !important;
-}
-
-.list-item {
-  cursor: pointer;
-}
-
-/* modify this in badge */
-.badge-avatar {
-  top: 0;
-  right: 0;
-}
-/* modify in card */
-.card {
-  background-color: white;
-}
-/* modify this in avatar */
-
-.avatar {
-  border-radius: 50%;
-  width: 3.5rem;
-  height: 3.5rem;
-  margin: 0 0.5rem;
-}
-
-.avatar-xs {
-  width: 2.25rem;
-  height: 2.25rem;
-}
-
-.avatar-sm {
-  width: 2.75rem;
-  height: 2.75rem;
-}
-
-.avatar-md {
-  width: 3.5rem;
-  height: 3.5rem;
-}
-
-.avatar-lg {
-  width: 4.25rem;
-  height: 4.25rem;
-}
-
-.avatar-xl {
-  width: 5rem;
-  height: 5rem;
 }
