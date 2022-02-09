@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../../assets/favicon.png">
+    <title>UI CookBook | Modals</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/night-owl.min.css">
+    <link rel="stylesheet" href="../docs.css">
+</head>
+
+<body>
+    <div>
+        <nav class="nav d-flex ">
+            <div class="left-nav">
+                <h1><a href="../../index.html">UI Cookbook</a></h1>
+            </div>
+            <div class="right-nav">
+                <nav>
+                    <ul class="right-nav d-flex">
+                        <li class="list-no-bullet"><a href="../intro.html">Docs</a></li>
+                        <li class="list-no-bullet"><a target="_blank"
+                                href="https://www.linkedin.com/in/aishwarya-biradar-60b8b7104/"><i
+                                    class="fab fa-linkedin-in"></i></a></li>
+                        <li class="list-no-bullet"><a target="_blank" href="https://github.com/aishwarya-bm/"><i
+                                    class="fab fa-github"></i></a>
+                        </li>
+                        <li class="list-no-bullet"><a target="_blank" href="https://twitter.com/Aishwar85262843"><i
+                                    class="fab fa-twitter"></i></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </nav>
+        <div class="d-flex doc-body">
+            <aside class="doc-sidebar text-center">
+                <h3>Getting Started</h3>
+                <ul class="list list-no-bullet">
+                    <li class="list-item">
+                        <a href="../intro.html">Introduction</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="./typography.html">Typography</a>
+                    </li>
+                    <hr>
+                </ul>
+                <ul class="list list-no-bullet">
+                    <h3>Components</h3>
+                    <li class="list-item">
+                        <a href="./alert.html">Alert</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="./avatar.html">Avatar</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="./badge.html">Badge</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="./button.html">Button</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="./card.html">Card</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="./grid.html">Grid</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="./image.html">Image</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="./input.html">Input</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="./list.html">List</a>
+                    </li>
+                    <li class="list-item doc-nav-active">
+                        <a href="./modal.html">Modal</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="./nav.html">Navbar</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="./rating.html">Rating</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="./snackbar.html">Snackbar</a>
+                    </li>
+
+                </ul>
+            </aside>
+            <main class="doc-content">
+                <h3>Modals</h3>
+
+                <p>
+                    Modals are the pop-ups that involve taking user confirmation,give feedback or user choice selection.
+                    They draws over the main content of the application. Users need to interact for a smooth flow by
+                    providing confirmation or choice selection.
+                </p>
+                <br>
+                <h4>Simple modal</h4>
+                <p>Click on the button below to see the modal in action.</p>
+                <div class="c-example d-flex center">
+                    <button class="btn btn-primary btn-modal-alert">Open modal dialog</button>
+
+                    <div class="modal-container hide">
+                        <div class="modal d-flex">
+                            <h2 class="modal-header">Modal header</h2>
+                            <div class="modal-body">
+                                Are you sureyou want to delete?
+                            </div>
+                            <div class="modal-action d-flex">
+                                <button class="btn btn-primary submit-a1">Yes</button>
+                                <button class="btn btn-light submit-a2">No</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <pre>
+                    <code  class="html">
+<div class="c-example d-flex center">
+    <button class="btn btn-primary btn-modal-alert">Open modal dialog</button>
+
+    <div class="modal-container hide">
+        <div class="modal d-flex">
+            <h2 class="modal-header">Modal header</h2>
+            <div class="modal-body">
+                Are you sure you want to delete?
+            </div>
+            <div class="modal-action d-flex">
+                <button class="btn btn-primary submit-a1">Yes</button>
+                <button class="btn btn-light submit-a2">No</button>
+            </div>
+        </div>
+    </div>
+</div>
+                    </code>
+                </pre>
+
+                <nav>
+                    <ul class="d-flex list-no-bullet doc-nav-bottom">
+                        <li class="list-item"> &lt; &nbsp;<a href="./list.html">List</a> </li>
+                        <li class="list-item">&gt; &nbsp;<a href="./nav.html">Navbar</a></li>
+                    </ul>
+                </nav>
+            </main>
+        </div>
+    </div>
+    <script src="../../js/modal.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js" crossorigin="anonymous"
+        referrerpolicy="no-referrer"></script>
+    <script>hljs.highlightAll();</script>
+    <script src="../../js/codeblocks.js"></script>
+</body>
+
+</html>

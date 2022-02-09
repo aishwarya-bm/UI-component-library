@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../../assets/favicon.png">
+    <title>UI CookBook | Buttons</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/night-owl.min.css">
+    <link rel="stylesheet" href="../docs.css">
+    <link rel="stylesheet" href="../../stylesheets/components/button.css">
+</head>
+
+<body>
+    <div>
+        <nav class="nav d-flex ">
+            <div class="left-nav">
+                <h1><a href="../../index.html">UI Cookbook</a></h1>
+            </div>
+            <div class="right-nav">
+                <nav>
+                    <ul class="right-nav d-flex">
+                        <li class="list-no-bullet"><a href="../intro.html">Docs</a></li>
+                        <li class="list-no-bullet"><a target="_blank"
+                                href="https://www.linkedin.com/in/aishwarya-biradar-60b8b7104/"><i
+                                    class="fab fa-linkedin-in"></i></a></li>
+                        <li class="list-no-bullet"><a target="_blank" href="https://github.com/aishwarya-bm/"><i
+                                    class="fab fa-github"></i></a>
+                        </li>
+                        <li class="list-no-bullet"><a target="_blank" href="https://twitter.com/Aishwar85262843"><i
+                                    class="fab fa-twitter"></i></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </nav>
+        <div>
+            <div class="d-flex doc-body">
+                <aside class="doc-sidebar text-center">
+                    <h3>Getting Started</h3>
+                    <ul class="list list-no-bullet">
+                        <li class="list-item">
+                            <a href="../intro.html">Introduction</a>
+                        </li>
+                        <li class="list-item">
+                            <a href="./typography.html">Typography</a>
+                        </li>
+                        <hr>
+                    </ul>
+                    <ul class="list list-no-bullet">
+                        <h3>Components</h3>
+                        <li class="list-item">
+                            <a href="./alert.html">Alert</a>
+                        </li>
+                        <li class="list-item">
+                            <a href="./avatar.html">Avatar</a>
+                        </li>
+                        <li class="list-item">
+                            <a href="./badge.html">Badge</a>
+                        </li>
+                        <li class="list-item  doc-nav-active">
+                            <a href="./button.html">Button</a>
+                        </li>
+                        <li class="list-item">
+                            <a href="./card.html">Card</a>
+                        </li>
+                        <li class="list-item">
+                            <a href="./grid.html">Grid</a>
+                        </li>
+                        <li class="list-item">
+                            <a href="./image.html">Image</a>
+                        </li>
+                        <li class="list-item">
+                            <a href="./input.html">Input</a>
+                        </li>
+                        <li class="list-item">
+                            <a href="./list.html">List</a>
+                        </li>
+                        <li class="list-item">
+                            <a href="./modal.html">Modal</a>
+                        </li>
+                        <li class="list-item">
+                            <a href="./nav.html">Navbar</a>
+                        </li>
+                        <li class="list-item">
+                            <a href="./rating.html">Rating</a>
+                        </li>
+                        <li class="list-item">
+                            <a href="./snackbar.html">Snackbar</a>
+                        </li>
+
+                    </ul>
+                </aside>
+                <main class="doc-content">
+                    <h3>Buttons</h3>
+                    <p>
+                        Buttons, as we already know are the sources for taking user actions. These actions help you
+                        interact
+                        with the websites.
+                    </p>
+                    <br>
+                    <h4>Contained buttons</h4>
+                    <p>
+                        These buttons represent call-to-action, meaning they contain primary actions in your website.
+                        They are high-emphasis, distinguished by their use of elevation and fill. Here we have these
+                        colors based on the type of usecase, primary meaning the primary color that runs in your app
+                        indicating the primary actions, green button for success & red buttons for errors.
+                    </p>
+                    <div class="c-example d-flex center">
+                        <button class="btn btn-primary">Primary</button>
+                        <button class="btn btn-secondary">Secondary</button>
+                        <button class="btn btn-success">Success</button>
+                        <button class="btn btn-error">Error</button>
+                        <button class="btn btn-light">Light</button>
+                    </div>
+
+                    <pre>
+                        <code class="html">
+<button class="btn btn-primary">Primary</button>
+<button class="btn btn-secondary">Secondary</button>
+<button class="btn btn-success">Success</button>
+<button class="btn btn-error">Error</button>
+<button class="btn btn-light">Light</button>
+                        </code>
+                    </pre>
+
+
+                    <h4>Outlined buttons</h4>
+                    <p>
+                        These buttons are simply outlined buttons with white background color. Use this variant by
+                        replacing
+                        '.btn-variant' with '.btn-outline-variant'. These also reflect the usecase based on colors &
+                        hover effects.
+                    </p>
+                    <div class="c-example d-flex center">
+                        <button class="btn btn-outline-primary">Primary</button>
+                        <button class="btn btn-outline-secondary">Secondary</button>
+                        <button class="btn btn-outline-link">Link</button>
+                        <button class="far fa-save btn btn-outline-icon">Save</button>
+                        <button class="btn btn-outline-success">Success</button>
+                        <button class="btn btn-outline-danger">Error</button>
+                    </div>
+                    <pre>
+                        <code class="html">
+<button class="btn btn-outline-primary">Primary</button>
+<button class="btn btn-outline-secondary">Secondary</button>
+<button class="btn btn-outline-link">Link</button>
+<button class="far fa-save btn btn-outline-icon">Save</button>
+<button class="btn btn-outline-success">Success</button>
+<button class="btn btn-outline-danger">Error</button>
+                        </code>
+                    </pre>
+
+                    <h4>Link & icon buttons</h4>
+                    <p>
+                        Link buttons are text buttons which help you navigate to a link.
+                        Icon buttons are simple buttons with an icon embedded mainly seen in social media & shopping
+                        sites.
+                    </p>
+                    <div class="c-example d-flex center">
+                        <button class="btn btn-link">Link</button>
+                        <button class="btn btn-icon"><i class="far fa-save fa-lg"></i></button>
+                    </div>
+                    <pre>
+                        <code class="html">
+<button class="btn btn-link"><a href="link">Link</a></button>
+<button class="btn btn-icon"><i class="far fa-save"></i></button>
+                        </code>
+                    </pre>
+
+                    <h4>Button with text & icon</h4>
+                    <p>
+                        These buttons contain a text and an icon.
+                        these buttons are fixed to a particular part of the viewport and
+                        are stacked on top of all the things. the always appear in the
+                        viewport and are usually used to provide a way to allow user to
+                        scroll to top or open menus
+                    </p>
+                    <div class="c-example d-flex center">
+                        <button class="btn btn-icon-text"><i class="far fa-save"></i>Save</button>
+                    </div>
+                    <pre>
+                        <code class="html">
+<button class="btn btn-icon-text"><i class="far fa-save"></i>Save</button>
+                        </code>
+                    </pre>
+
+                    <h4>Floating action buttons</h4>
+                    <p>
+                        These buttons are seen fixed to a particular part of the screen.
+                        They provide a way to allow user to open menus, move to top or bottom of the screen.
+                    </p>
+
+                    <div class="c-example d-flex center">
+                        <button class="btn btn-float btn-float-action">
+                            <span><i class="fas fa-plus"></i></span>
+                        </button>
+                    </div>
+                    <pre>
+                        <code class="html">
+<button class="btn btn-float btn-float-action"><span><i class="fas fa-plus"></i></span></button>
+                        </code>
+                    </pre>
+
+                    <nav>
+                        <ul class="d-flex list-no-bullet doc-nav-bottom">
+                            <li class="list-item"> &lt; &nbsp;<a href="./badge.html">Badge</a> </li>
+                            <li class="list-item">&gt; &nbsp;<a href="./card.html">Card</a></li>
+                        </ul>
+                    </nav>
+                </main>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js" crossorigin="anonymous"
+        referrerpolicy="no-referrer"></script>
+    <script>hljs.highlightAll();</script>
+    <script src="../../js/codeblocks.js"></script>
+</body>
+
+</html>

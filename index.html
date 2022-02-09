@@ -5,15 +5,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../assets/favicon.png">
     <title>UI Cookbook</title>
-    <link rel="stylesheet" href="./stylesheets/index.css">
-    <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
         crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/night-owl.min.css">
+    <link rel="stylesheet" href="./docs/docs.css">
 </head>
 
 <body>
-    <div class="landing-container">
+    <div class="text-center">
         <nav class="nav d-flex">
             <div class="left-nav">
                 <h1><a href="../../index.html">UI Cookbook</a></h1>
@@ -49,19 +50,30 @@
             </div>
 
             <div>
-                <a href="./docs/intro.html" class="btn btn-primary">
+                <a href="./docs/intro.html" class="btn btn-primary doc-btn">
                     Get Started
                 </a>
-                <a href="https://github.com/aishwarya-bm/UI-component-library" class="btn btn-light">
+                <a href="https://github.com/aishwarya-bm/UI-component-library" class="btn btn-light doc-btn">
                     Github
                 </a>
             </div>
-            <div class="subhead">To get started with <b>UI Cookbook</b>, you just have to
+            <div class="subhead">To get started with <i>UI Cookbook</i>, you just have to
                 copy this
-                CDN link and paste it inside the head tag of your HTML web page .</div>
+                link and paste it inside the &lt;head&gt; tag of your HTML web page .
+            </div>
+            <pre>
+                <code class="html">
+<link rel="stylesheet" href="https://ui-cookbook.netlify.app/stylesheets/index.css" />
+                </code>
+            </pre>
+
         </main>
 
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js" crossorigin="anonymous"
+        referrerpolicy="no-referrer"></script>
+    <script>hljs.highlightAll();</script>
+    <script src="../../js/codeblocks.js"></script>
 </body>
 
 </html>

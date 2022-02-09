@@ -1,4 +1,12 @@
 @import url(../stylesheets/index.css);
+
+body {
+  font-family: "Fira Sans", sans-serif;
+  margin: 0;
+  text-align: justify;
+}
+
+/* landing page */
 .nav {
   background-color: var(--primary-lighter);
   width: 100%;
@@ -17,16 +25,8 @@
   font-weight: 700;
 }
 
-.doc-main {
-  margin: 0 5rem;
-  padding-bottom: 5rem;
-  flex-direction: column;
-  align-items: center;
-}
-
-.logo {
-  justify-content: center;
-  margin: 1rem;
+.doc-body {
+  margin: 1rem 5rem 0 5rem;
 }
 
 .doc-img {
@@ -34,12 +34,128 @@
   height: auto;
 }
 
+.head h2 {
+  margin: 0;
+}
+
 .subhead {
   padding: 1rem;
   width: 60%;
 }
 
-@media screen and (max-width: 600px) {
+/* intro page & other common styles*/
+
+.doc-main {
+  padding-bottom: 5rem;
+  flex-direction: column;
+  align-items: center;
+  height: 85vh;
+  overflow-y: scroll;
+}
+
+.logo {
+  justify-content: center;
+  margin: 1rem;
+}
+
+.doc-sidebar {
+  padding: 1rem;
+  flex: 0 0 250px;
+  overflow-y: auto;
+  height: 80vh;
+}
+
+.doc-content {
+  padding: 1rem;
+  margin: 0 2rem;
+  height: 80vh;
+  overflow-y: scroll;
+  flex: 0 0 calc(100% - 13rem);
+}
+
+.c-example {
+  padding: 2rem;
+  background-color: var(--doc-bg);
+}
+
+.c-code {
+  overflow-x: auto;
+}
+
+.list-item:hover {
+  background-color: var(--primary-lighter);
+}
+
+.doc-nav {
+  color: black;
+  display: none;
+  text-align: center;
+}
+.doc-nav-bottom {
+  justify-content: space-between;
+  color: var(--primary-dark);
+}
+
+.doc-btn {
+  font-size: 1.25rem;
+}
+
+.center {
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.doc-nav-active {
+  background-color: var(--primary-lighter);
+  font-weight: 600;
+}
+
+.doc-sidebar::-webkit-scrollbar,
+.doc-content::-webkit-scrollbar,
+.doc-main::-webkit-scrollbar {
+  width: 0.3rem;
+}
+
+.doc-sidebar::-webkit-scrollbar-track,
+.doc-content::-webkit-scrollbar-track,
+.doc-main::-webkit-scrollbar-track {
+  background: var(--grey-bg);
+}
+
+.doc-sidebar::-webkit-scrollbar-thumb,
+.doc-content::-webkit-scrollbar-thumb,
+.doc-main::-webkit-scrollbar-thumb {
+  background: var(--primary-darker);
+}
+
+/* custom style for doc, code in highlight js will have fixed position*/
+.toast-example {
+  position: absolute;
+}
+
+/* custom style for doc nav */
+.list-item {
+  cursor: pointer;
+}
+
+.grid-item {
+  border: 1px solid;
+}
+
+/* overridden only for this special case, since background is dark */
+.card-overlay .card-header {
+  color: white;
+}
+pre {
+  white-space: -moz-pre-wrap; /* Mozilla, supported since 1999 */
+  white-space: -pre-wrap; /* Opera */
+  white-space: -o-pre-wrap; /* Opera */
+  white-space: pre-wrap; /* CSS3 – Text module (Candidate Recommendation) http://www.w3.org/TR/css3-text/#white-space */
+  word-wrap: break-word; /* IE 5.5+ */
+}
+
+@media screen and (max-width: 700px) {
   .nav {
     flex-direction: column;
   }
@@ -58,5 +174,21 @@
   .doc-img {
     width: 10em;
     height: 10em;
+  }
+  .doc-body {
+    flex-direction: column;
+    margin: 0;
+  }
+  .doc-content {
+    padding: 1rem;
+    margin: 1rem;
+    overflow-y: unset;
+  }
+  .center {
+    flex-direction: column;
+  }
+  .doc-nav {
+    display: block;
+    text-align: center;
   }
 }
