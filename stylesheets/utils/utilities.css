@@ -60,6 +60,14 @@
   text-align: center;
 }
 
+.text-justify{
+  text-align: justify;
+}
+
+.text-linethrough{
+  text-decoration: line-through;
+}
+
 .gray-text {
   color: var(--shadow-color);
 }
@@ -113,4 +121,17 @@ h5 {
 h6 {
   font-size: 1rem;
   font-weight: 500;
+}
+
+/* align-children */
+
+.children-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.children-stacked {
+  display: flex;
+  flex-direction: column;
 }

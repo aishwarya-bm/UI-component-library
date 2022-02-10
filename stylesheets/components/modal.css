@@ -17,10 +17,13 @@
   padding: 1rem;
   max-width: 100%;
   flex-direction: column;
+  min-width: 15rem;
 }
 
 .modal-body {
   margin: 1rem 0;
+  overflow-y: auto;
+  height: 50%;
 }
 
 .modal-action {
