@@ -72,6 +72,14 @@
   color: var(--shadow-color);
 }
 
+.green-text {
+  color: var(--success-color);
+}
+
+.red-text {
+  color: var(--error-txt);
+}
+
 .text-sm {
   font-size: 0.8rem;
 }
@@ -134,4 +142,8 @@ h6 {
 .children-stacked {
   display: flex;
   flex-direction: column;
+}
+
+.gap-sm{
+    gap: .5rem;
 }

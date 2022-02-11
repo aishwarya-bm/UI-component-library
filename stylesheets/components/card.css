@@ -1,6 +1,5 @@
 .card {
-  flex-direction: column;
-  width: 20rem;
+  width: 15rem;
   margin: 1rem;
   border-radius: 0.3rem;
   box-shadow: 5px 5px 10px var(--shadow-color);
@@ -17,14 +16,12 @@
 /* this element contains the media */
 .card-media {
   width: 100%;
-  margin-bottom: 0.25rem;
   position: relative;
 }
 
 /*  this element contains the header title & author */
 .card-header {
   padding: 0 1rem;
-  flex-direction: column;
 }
 
 .card-title {
@@ -40,18 +37,17 @@
 /* this element contains the descriptive text */
 .card-content {
   flex-grow: 1;
-  padding: 0 1rem 0.8rem 1rem;
+  padding: 0 1rem .5rem 1rem;
 }
 
 /* card-action element contains the action for icons & buttons, card-head contains header(title & author) & dismiss */
-.card-action,
 .card-head {
   justify-content: space-between;
   align-items: center;
 }
 
-/* header on top card */
-.header-top .card-top {
+/* card dismiss */
+.card-dismiss .card-top {
   flex-direction: column-reverse;
 }
 
@@ -61,6 +57,10 @@
 }
 
 /* horizontal card */
+.card-hor{
+  width: 20rem;
+}
+
 .card-hor .card-top {
   flex-direction: row;
 }
