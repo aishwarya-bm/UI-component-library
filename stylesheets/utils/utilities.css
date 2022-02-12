@@ -144,6 +144,12 @@ h6 {
   flex-direction: column;
 }
 
+.children-stacked-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .gap-sm{
     gap: .5rem;
 }

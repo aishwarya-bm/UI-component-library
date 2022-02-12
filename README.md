@@ -6,12 +6,13 @@ A component libraru built using vanilla css to build websites faster.
 
 UI Cookbook is a component library which comes with a broad spectrum of utility classes. The library aims at building UI quickly by focussing on the functionality by providing the predefined classes.
 
-###Live link: https://ui-cookbook.netlify.app
+### Live link: https://ui-cookbook.netlify.app
 
 ### Installing
 
 - To introduce the UI Cookbook library to your project, copy the link given below and paste it in the <head> tag of your html, above all other style sheets.
-- To include in HTML
+- To include in HTML -
+
   `<link rel="stylesheet" href="https://ui-cookbook.netlify.app/stylesheets/index.css"/>`
 
 or
