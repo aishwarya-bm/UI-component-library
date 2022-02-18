@@ -2,8 +2,8 @@
   padding: 0.5rem 0;
 }
 
-input[type="text"] {
-  background: var(--white-color);
+input[type="text"],
+input[type="password"] {
   border: 1px solid var(--shadow-color);
   padding: 0.5rem;
   font-size: 0.8rem;
