@@ -1,0 +1,12 @@
+.slider-container {
+    padding: 2rem 0;
+    width: 100%;
+}
+
+input[type="range"] {
+    display: block;
+    outline: 1px solid transparent;
+    width: 100%;
+    accent-color: var(--secondary-color);
+}
+
