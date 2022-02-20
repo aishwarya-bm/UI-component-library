@@ -63,6 +63,7 @@ body {
   flex: 0 0 250px;
   overflow-y: auto;
   height: 80vh;
+  box-shadow: 0 5px 9px var(--helper-color);
 }
 
 .doc-content {
@@ -114,7 +115,7 @@ body {
 .doc-sidebar::-webkit-scrollbar,
 .doc-content::-webkit-scrollbar,
 .doc-main::-webkit-scrollbar {
-  width: 0.3rem;
+  width: 0.4rem;
 }
 
 .doc-sidebar::-webkit-scrollbar-track,

@@ -6,13 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="../../assets/favicon.png">
-    <title>UI CookBook | Alerts</title>
+    <title>UI CookBook | Slider</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/night-owl.min.css">
     <link rel="stylesheet" href="../docs.css">
 </head>
 
 <body>
-    <div class="doc-container">
+    <div>
         <nav class="nav d-flex ">
             <div class="left-nav">
                 <h1><a href="../../index.html">UI Cookbook</a></h1>
@@ -47,7 +47,7 @@
                 </ul>
                 <ul class="list list-no-bullet">
                     <h3>Components</h3>
-                    <li class="list-item  doc-nav-active">
+                    <li class="list-item">
                         <a href="./alert.html">Alert</a>
                     </li>
                     <li class="list-item">
@@ -83,6 +83,9 @@
                     <li class="list-item">
                         <a href="./rating.html">Rating</a>
                     </li>
+                    <li class="list-item doc-nav-active">
+                        <a href="./slider.html">Slider</a>
+                    </li>
                     <li class="list-item">
                         <a href="./snackbar.html">Snackbar</a>
                     </li>
@@ -90,70 +93,30 @@
                 </ul>
             </aside>
             <main class="doc-content">
-                <h2>Alerts</h2>
+                <h3>Slider</h3>
 
                 <p>
-                    Alert is a short feedback message that shows up on some user action. There are multiple variants of
-                    alerts - primary, secondary, informational,success & error alerts.
+                    Sliders represent a range of numeric values. We can see their usage in price filters in E-Commerce
+                    apps & an volume controls in media apps.
                 </p>
                 <hr>
-                <h4>Variations</h4>
-                <p>These occupy 100% width of your screen.</p>
-                <div class="c-example">
-                    <div class="alert alert-primary">
-                        This is a primary alert!
+                <div class="c-example d-flex center p-rel">
+                    <span>0</span>
+                    <div class="slider-container">
+                        <input type="range" min="1" max="100" value="50" class="slider" id="slider">
                     </div>
-                    <div class="alert alert-secondary">
-                        This is a secondary alert!
-                    </div>
-                    <div class="alert alert-success">
-                        This is a success alert!
-                    </div>
-                    <div class="alert alert-danger">
-                        This is a danger alert!
-                    </div>
-                    <div class="alert alert-warning">
-                        This is a warning alert!
-                    </div>
-                    <div class="alert alert-info">
-                        This is a info alert!
-                    </div>
-                    <div class="alert alert-dark">
-                        This is a dark alert!
-                    </div>
+                    <span>100</span>
                 </div>
-
                 <hr>
-                <p>Alerts are created by using <i>.alert</i> class, followed by the <i>.alert-variant</i> name.</p>
                 <pre>
-                    <code class="html">
-<div class="alert alert-primary">
-        This is a primary alert!
-</div>
-<div class="alert alert-secondary">
-    This is a secondary alert!
-</div>
-<div class="alert alert-success">
-    This is a success alert!
-</div>
-<div class="alert alert-danger">
-    This is a danger alert!
-</div>
-<div class="alert alert-warning">
-    This is a warning alert!
-</div>
-<div class="alert alert-info">
-    This is a info alert!
-</div>
-<div class="alert alert-dark">
-    This is a dark alert!
-</div>
-                    </code>
-                </pre>
+            <code class="html">
+<input type="range" min="0" max="100" value="50" class="slider" id="slider">
+            </code>
+        </pre>
                 <nav>
                     <ul class="d-flex list-no-bullet doc-nav-bottom">
-                        <li class="list-item"> <a href="./typography.html">&lt; &nbsp;Typography</a> </li>
-                        <li class="list-item"><a href="./avatar.html">Avatar &gt;</a></li>
+                        <li class="list-item"> <a href="./rating.html">&lt; &nbsp;Rating</a> </li>
+                        <li class="list-item"> <a href="./snackbar.html">Snackbar&nbsp;&gt;</a> </li>
                     </ul>
                 </nav>
             </main>
