@@ -15,8 +15,8 @@
 
     <div class="doc-container">
         <nav class="nav d-flex">
-            <div class="left-nav">
-
+            <div class="left-nav children-center">
+                <button class="fa fa-bars btn btn-link" id="component-menu"></button>
                 <h1><a href="../../index.html">UI Cookbook</a></h1>
             </div>
             <div class="right-nav">
@@ -35,7 +35,7 @@
                 </nav>
             </div>
         </nav>
-        <!-- <div><button class="btn btn-icon doc-nav" aria-hidden="true"></button></div> -->
+
         <div>
             <div class="d-flex doc-body">
                 <aside class="doc-sidebar text-center">
@@ -88,6 +88,9 @@
                         <li class="list-item" id="docs-sidebar-rating">
                             <a href="../docs/components/rating.html">Rating</a>
                         </li>
+                        <li class="list-item">
+                            <a href="../docs/components/slider.html">Slider</a>
+                        </li>
                         <li class="list-item" id="docs-sidebar-snackbar">
                             <a href="../docs/components/snackbar.html">Snackbar</a>
                         </li>
@@ -95,7 +98,7 @@
                     </ul>
                 </aside>
                 <main class="doc-content">
-                    <h2>Introduction</h2>
+                    <h2 class="component-title">Introduction</h2>
                     <p>UI Cookbook is a component library which comes with a broad spectrum of utility classes.
                         The library aims at building UI quickly by focussing on the functionality by providing the
                         predefined classes.
@@ -118,7 +121,7 @@
             </div>
         </div>
     </div>
-
+    <script src="../js/componentMenu.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js" crossorigin="anonymous"
         referrerpolicy="no-referrer"></script>
     <script>hljs.highlightAll();</script>
